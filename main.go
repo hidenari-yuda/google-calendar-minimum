@@ -158,8 +158,8 @@ func CreateTaskInCalendar(client *http.Client) error {
 	fmt.Println(ctx)
 	fmt.Println(client)
 
-	// accessToken := `ya29.a0Aa4xrXNjQYGHu7XfK8JbUhluAOTkmfbxMdgrmCdhfbEe4NvMKxVR5u6P0RFkSCuJYehCjHVXTIu4CbV-4ScWYzxUnCkyDJITSWhG6cqB29BA7EleAMLGrLfrNQYsjpZIhvBx58Dshb7CAmQ6liwyUGkOmOHgaCgYKATASARESFQEjDvL9ILkrCkPhEUZRSSIMcYpP8g0163`
-	// refreshToken := `1//0exe2Smcjzb_zCgYIARAAGA4SNwF-L9IrN9YlydxJkOBVQGiwscUNBOA8h9jRbaWRbXhEIb4klU-gIQ2SfBTwg_QCNA8EyWILrQ4`
+	// accessToken := ``
+	// refreshToken := ``
 	// expiry := time.Now().Add(time.Hour * 24 * 30)
 
 	// token := &oauth2.Token{
@@ -186,7 +186,7 @@ func CreateTaskInCalendar(client *http.Client) error {
 	event := &calendar.Event{
 		Summary:     "山田さん面接対策",
 		Location:    "",
-		Description: "株式会社Motoyui最終面接に向けた面接対策です。",
+		Description: "株式会社テスト最終面接に向けた面接対策です。",
 		Start: &calendar.EventDateTime{
 			DateTime: strings.Split(time.Now().Format(time.RFC3339Nano), "+")[0],
 			TimeZone: "Asia/Tokyo",
